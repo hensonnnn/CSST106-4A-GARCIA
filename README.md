@@ -4,7 +4,7 @@ Hands-On Exploration:
 Chosen Real-World AI Application: Lane Detection for autonomous vehicles
 
 ``` python
-# Importing necessary libraries
+# Import necessary libraries
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,20 +25,32 @@ blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
 # Step 3: Use Canny edge detection
 edges = cv2.Canny(blurred_image, 50, 150)
 
-# Step 4: Display the original and edge-detected images side by side
-fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+# Step 4: Display the original, grayscale, and edge-detected images using plt.subplot
+plt.figure(figsize=(10, 6))
 
 # Original Image
-ax[0].imshow(cv2.cvtColor(road_image, cv2.COLOR_BGR2RGB))
-ax[0].set_title('Original Image')
-ax[0].axis('off')
+plt.subplot(1, 3, 1)
+plt.title('Original Image')
+plt.imshow(cv2.cvtColor(road_image, cv2.COLOR_BGR2RGB))
+plt.axis('off')
+
+# Grayscale Image
+plt.subplot(1, 3, 2)
+plt.title('Grayscale Image')
+plt.imshow(gray_image, cmap='gray')
+plt.axis('off')
 
 # Canny Edge Detected Image
-ax[1].imshow(edges, cmap='gray')
-ax[1].set_title('Canny Edge Detection')
-ax[1].axis('off')
+plt.subplot(1, 3, 3)
+plt.title('Edge Detection')
+plt.imshow(edges, cmap='gray')
+plt.axis('off')
 
+# Display all images
+plt.tight_layout()
 plt.show()
+
+
 ```
 
 
