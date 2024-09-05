@@ -46,12 +46,14 @@ plt.show()
 https://github.com/user-attachments/assets/306ef956-9e2e-4ca3-bd75-d09636e7fe4e
 
 
-Introduction to Computer Vision and Image Processing
+# Introduction to Computer Vision and Image Processing
+
 Computer Vision is a field of AI that enables machines to interpret and analyze visual data from the world.
 Image processing plays a critical role by enhancing, manipulating, and preparing images for AI systems to analyze. 
 It helps AI systems recognize patterns, detect objects, and understand visual information accurately.
 
-Types of Image Processing Techniques
+# Types of Image Processing Techniques
+
 1. Filtering: Used to remove noise and improve image quality.
 Example: Gaussian filter in medical imaging to enhance clarity.
 
@@ -61,11 +63,13 @@ Example: Canny edge detection for lane detection in autonomous vehicles.
 3. Segmentation: Divides images into regions for better analysis.
 Example: Facial feature isolation in facial recognition systems.
 
-Case Study Overview: Autonomous Vehicles​
+# Case Study Overview: Autonomous Vehicles​
+
 In autonomous vehicles, image processing techniques such as edge detection and segmentation are crucial. Edge detection helps recognize road lanes, while segmentation separates road from objects.
 These techniques enable real-time visual analysis, helping the vehicle navigate safely. Challenges include dealing with poor lighting conditions and detecting complex road obstacles.​
 
-Image Processing Implementation: Lane Detection​
+# Image Processing Implementation: Lane Detection​
+
 The model uses the Canny edge detection algorithm to identify lane markings on the road.​
 
 1. Convert the image to grayscale.​
@@ -76,7 +80,8 @@ The model uses the Canny edge detection algorithm to identify lane markings on t
 
 This helps the autonomous vehicle maintain its course by recognizing lane boundaries effectively.​
 
-Conclusion​
+# Conclusion​
+
 Effective image processing is essential for AI systems to analyze and interpret visual data accurately. Through this activity, 
 we explored how techniques such as edge detection and segmentation solve real-world AI problems, such as lane detection in autonomous vehicles. 
 These methods enable AI to perform tasks that involve complex visual interpretation.​
